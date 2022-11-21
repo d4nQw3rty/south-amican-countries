@@ -11,7 +11,7 @@ const NavBar = () => {
       <nav>
         <span className="logo-holder">
           <img src="" alt="SouthAmerica" className="logo" />
-          <h1 className="Title">Hispanic South America Countries</h1>
+          <h1 className="Title">South America Countries</h1>
         </span>
         <ul className="nav-links">
           {link.map((link) => (

@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-const url ='https://restcountries.com/v3.1/alpha?codes=col,pe,bol,ve,ecu,chi,arg,pry,uru,bra';
+
+const url = 'https://restcountries.com/v3.1/subregion/South America';
 export const fetchCountries = createAsyncThunk(
   'countries/fetchCountries',
   async () => {

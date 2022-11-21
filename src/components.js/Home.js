@@ -9,8 +9,9 @@ const Home = () => {
       <div className="container">
         {country.map((item) => (
           <div className="card" key={item.name}>
-            <div className='card-image-container'>
-              <img className="card-image"
+            <div className="card-image-container">
+              <img
+                className="card-image"
                 src={item.flag
                             .replace('https://restcountries.com/data/', 'https://restcountries.com/data/')  // eslint-disable-line
                   .replace('.svg', '.png')}
