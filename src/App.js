@@ -1,29 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
+// import { Route, Routes } from 'react-router-dom';
+// import { useDispatch } from 'react-redux';
+import Home from './components.js/Home';
+import NavBar from './components.js/NavBar';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <NavBar />
+    <Home />
+  </div>
+);
 
 export default App;
