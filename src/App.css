@@ -1,8 +1,32 @@
+.continent {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: center;
+}
+
 .card {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.continent-img {
+  display: flex;
+  width: 50%;
+  height: 50%;  
+  justify-content: center; 
+}
+
+.continent-text {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.continent-title {
+  text-align: center;
 }
 
 .card-image-container {
