@@ -1,3 +1,9 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .continent {
   display: flex;
   flex-direction: row;
