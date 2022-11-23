@@ -1,14 +1,27 @@
 import React from 'react';
-import '../App.css';
 
+const NavBar = () => {
+  const links = [
+    {
+      id: 1,
+      name: 'Home',
+      path: '/',
+    },
+    {
+      id: 2,
+      name: 'About',
+      path: '/about',
+    },
+  ];
 
-const NavBar = () => {  
   return (
-    <header>
-      <nav className="search">
-        <input type="text" placeholder="Search" />
-      </nav>
-    </header>
+    <ul>
+      {links.map((link) => (
+        <li key={link.id}>
+          <a href={link.path}>{link.name}</a>
+        </li>
+      ))}
+    </ul>
   );
 };
 
