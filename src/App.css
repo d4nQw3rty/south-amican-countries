@@ -11,13 +11,6 @@
   justify-content: center;
 }
 
-.card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .continent-img {
   display: flex;
   flex: 1;
@@ -35,16 +28,39 @@
 }
 
 .continent-title {
-  text-align: center;
+  margin: 0;
 }
 
-.card-image-container {
-  width: 50%;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.card-image {
-  height: auto;
-  width: 80%;
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;  
+  justify-content: center;
+  width: 40%;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text {
+  padding: 10px;
+}
+
+.card-title {
+margin: 0;
+text-align: end;
 }
 
 .card-body {
@@ -57,6 +73,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
+}
+
+.flag {
+ width: 100px;
 }
 
 .inputTex {

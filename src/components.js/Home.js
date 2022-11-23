@@ -37,6 +37,7 @@ const Home = () => {
                       ? item.flag
                       : 'https://www.countryflags.io/xx/flat/64.png'}
                     alt="flag"
+                    className="flag"
                   />
                 </div>
                 <div className="card-text">
@@ -54,6 +55,7 @@ const Home = () => {
                         ? item.flag
                         : 'https://www.countryflags.io/xx/flat/64.png'}
                       alt="flag"
+                      className="flag"
                     />
                   </div>
                   <div className="card-text">
