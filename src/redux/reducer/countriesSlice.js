@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const url = 'https://restcountries.com/v3.1/subregion/South America';
+
 export const fetchCountries = createAsyncThunk(
   'countries/fetchCountries',
   async () => {
@@ -15,8 +16,14 @@ const countriesSlice = createSlice({
   initialState: {
     countries: [],
     status: 'idle',
+    search: '',
   },
-  reducers: {},
+  reducers: {
+    searchUpdate: (state, action) => (
+      { ...state, search: action.payload }
+    ),
+
+  },
   extraReducers: {
     [fetchCountries.fulfilled]: (state, action) => {
       const value = state;
@@ -35,3 +42,4 @@ const countriesSlice = createSlice({
 });
 
 export default countriesSlice.reducer;
+export const { searchUpdate } = countriesSlice.actions;

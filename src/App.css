@@ -1,3 +1,9 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .continent {
   display: flex;
   flex-direction: row;
@@ -14,9 +20,12 @@
 
 .continent-img {
   display: flex;
-  width: 50%;
-  height: 50%;
+  flex: 1;
   justify-content: center;
+}
+
+.continent-img img {
+  height: 100px;
 }
 
 .continent-text {
@@ -41,4 +50,21 @@
 .card-body {
   flex: 1;
   text-align: center;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputTex {
+  width: 50%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
