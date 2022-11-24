@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { searchUpdate } from '../redux/reducer/countriesSlice';
 import '../App.css';
 
@@ -15,29 +16,36 @@ const Home = () => {
 
   return (
     <div>
-      <div className="continent">
-        <div className="continent-img">
-          <img src={img} alt="continent" />
-        </div>
-        <div className="continent-text">
-          <h1 className="continent-title">South America</h1>
-        </div>
-      </div>
       <div className="inputContainer">
-        <input value={search} type="text" onChange={handleChange} className="inputTex" />
+        <input value={search} type="text" onChange={handleChange} className="inputTex" placeholder="<      country      >" />
       </div>
+      <div className="Continent">
+        <div>
+          <Link to="/">
+            <img src={img} alt="Continent" />
+          </Link>
+        </div>
+        <div>
+          <h2>South America</h2>
+        </div>
+      </div>
+      <div className="country-title-cont"><span className="country-title">COUNTRIES</span></div>
+      <hr className="hr" />
       <div className="container">
         {
           search === ''
             ? country.map((item) => (
               <div className="card" key={item.name}>
                 <div className="card-img">
-                  <img
-                    src={item.flag
-                      ? item.flag
-                      : 'https://www.countryflags.io/xx/flat/64.png'}
-                    alt="flag"
-                  />
+                  <Link to={`/Details/${item.name}`}>
+                    <img
+                      src={item.flag
+                        ? item.flag
+                        : 'https://www.countryflags.io/xx/flat/64.png'}
+                      alt="flag"
+                      className="flag"
+                    />
+                  </Link>
                 </div>
                 <div className="card-text">
                   <h2 className="card-title">{item.name}</h2>
@@ -49,12 +57,15 @@ const Home = () => {
               .includes(search.toLowerCase())).map((item) => (
                 <div className="card" key={item.name}>
                   <div className="card-img">
-                    <img
-                      src={item.flag
-                        ? item.flag
-                        : 'https://www.countryflags.io/xx/flat/64.png'}
-                      alt="flag"
-                    />
+                    <Link to={`/Details/${item.name}`}>
+                      <img
+                        src={item.flag
+                          ? item.flag
+                          : 'https://www.countryflags.io/xx/flat/64.png'}
+                        alt="flag"
+                        className="flag"
+                      />
+                    </Link>
                   </div>
                   <div className="card-text">
                     <h2 className="card-title">{item.name}</h2>
