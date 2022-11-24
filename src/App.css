@@ -197,7 +197,7 @@ input::placeholder {
 .table-info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   width: 66.6%;
   padding-right: 3%;
 }
