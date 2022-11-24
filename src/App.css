@@ -21,7 +21,7 @@
   justify-content: center;
   background-color: #fc5193;
   color: rgba(255, 255, 255, 0.8);
-  gap: 20px;  
+  gap: 20px;
 }
 
 .country-title-cont {
@@ -42,7 +42,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .card {
@@ -64,7 +64,7 @@
   justify-content: center;
 }
 
-.card-text {  
+.card-text {
   padding: 5px;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
@@ -89,16 +89,16 @@
   text-align: center;
 }
 
-.inputContainer input:hover {
-  cursor: pointer;
-  border: solid 1px #fff;
-}
-
 .inputContainer input {
   font-size: large;
   color: rgba(255, 255, 255, 0.658);
   text-align: center;
   background-color: #ec4c89c4;
+}
+
+.inputContainer input:hover {
+  cursor: pointer;
+  border: solid 1px #fff;
 }
 
 input::placeholder {
@@ -143,5 +143,3 @@ input::placeholder {
   font-size: 15px;
   font-weight: 700;
 }
-
-

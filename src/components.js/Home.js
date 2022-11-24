@@ -20,21 +20,21 @@ const Home = () => {
         <input value={search} type="text" onChange={handleChange} className="inputTex" placeholder="<      country      >" />
       </div>
       <div className="Continent">
-      <div>
-        <Link to="/">
-          <img src={img} alt="Continent" />
-        </Link>
+        <div>
+          <Link to="/">
+            <img src={img} alt="Continent" />
+          </Link>
+        </div>
+        <div>
+          <h2>South America</h2>
+        </div>
       </div>
-      <div>
-        <h2>South America</h2>
-      </div>      
-    </div>
-    <div className='country-title-cont'><span className='country-title'>COUNTRIES</span></div>
+      <div className="country-title-cont"><span className="country-title">COUNTRIES</span></div>
       <div className="container">
         {
           search === ''
-            ? country.map((item, index) => (              
-              <div className="card" key={index}>
+            ? country.map((item) => (
+              <div className="card" key={item.name}>
                 <div className="card-img">
                   <Link to={`/Details/${item.name}`}>
                     <img
