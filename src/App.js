@@ -1,29 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import Home from './components.js/Home';
+// import NavBar from './components.js/NavBar';
+import { fetchCountries } from './redux/reducer/countriesSlice';
+import Details from './components.js/Details';
 import './App.css';
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+  dispatch(fetchCountries());
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Details/:name" element={<Details />} />
+        </Routes>
+      </main>
+    </>
   );
-}
+};
 
 export default App;
