@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 .App {
@@ -69,6 +69,7 @@ body {
   justify-content: center;
   padding-top: 10px;
 }
+
 .hr {
   border: 1px solid #fc5193;
   width: 100%;
@@ -137,17 +138,18 @@ input::placeholder {
   font-weight: 700;
 }
 
-/*Details styles*/
+/* Details styles */
 
 .return {
   display: flex;
   align-items: center;
-  padding-left: 6%; 
+  padding-left: 6%;
   margin: 0 8%;
   border-radius: 10px;
   height: 50px;
   color: rgba(255, 255, 255, 0.8);
 }
+
 .return-link {
   flex: 1;
   font-size: 25px;
@@ -160,9 +162,6 @@ input::placeholder {
 
 .return-icon {
   display: flex;
-}
-
-.return-icon {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -170,13 +169,13 @@ input::placeholder {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .table {
   display: flex;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 15px; 
+  font-size: 15px;
   padding-bottom: 50px;
   width: 100%;
   margin-top: 40px;
@@ -186,7 +185,7 @@ input::placeholder {
   font-weight: 900;
   display: flex;
   width: 33.3%;
-  margin: 3%
+  margin: 3%;
 }
 
 .table > tbody {
@@ -194,6 +193,7 @@ input::placeholder {
   flex-direction: column;
   width: 100%;
 }
+
 .table-info {
   display: flex;
   flex-wrap: wrap;
@@ -204,16 +204,14 @@ input::placeholder {
 
 .text {
   display: flex;
-  }
-
-
-.table > tbody > tr {
-  display: flex;
-  height: 50px;
-  align-items: center;
 }
 
 tr:nth-child(odd) {
   background-color: #fc5193;
 }
 
+.table > tbody > tr {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
