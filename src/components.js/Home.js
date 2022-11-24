@@ -30,6 +30,7 @@ const Home = () => {
         </div>
       </div>
       <div className="country-title-cont"><span className="country-title">COUNTRIES</span></div>
+      <hr className="hr" />
       <div className="container">
         {
           search === ''
