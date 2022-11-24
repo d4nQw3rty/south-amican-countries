@@ -27,8 +27,9 @@ const Home = () => {
       </div>
       <div>
         <h2>South America</h2>
-      </div>
+      </div>      
     </div>
+    <div className='country-title-cont'><span className='country-title'>COUNTRIES</span></div>
       <div className="container">
         {
           search === ''
