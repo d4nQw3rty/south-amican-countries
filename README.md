@@ -88,9 +88,9 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 - **[Single Page Application.]**
-- **[The user can reserve Rockets and Dragons and also join Missions.]**
-- **[The user can cancel reservations or joining missions]**
-- **[The user data is displayed in My Profile page.]**
+- **[The user will recieve the list of the region countries.]**
+- **[The user can check information for a especific country.]**
+- **[The user can return to home.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
