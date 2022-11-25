@@ -201,7 +201,7 @@ If you like this project leave a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - We would like to thank Microverse for letting us be part of this amazing program.
-- Thanks to Nelson Sakwa for his Design [visit site](https://github.com/d4nQw3rty/capstone3/issues)..
+- Thanks to Nelson Sakwa for his Design [visit site](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 - And thanks to all the people who helped me to make this project possible.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
