@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Home from './components.js/Home';
-// import NavBar from './components.js/NavBar';
 import { fetchCountries } from './redux/reducer/countriesSlice';
 import Details from './components.js/Details';
 import './App.css';
