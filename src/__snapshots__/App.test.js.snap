@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders App component 1`] = `
+<main
+  className="App"
+>
+  <div>
+    <div
+      className="inputContainer"
+    >
+      <input
+        className="inputTex"
+        onChange={[Function]}
+        placeholder="<      country      >"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="Continent"
+    >
+      <div>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt="Continent"
+            src="continent.png"
+          />
+        </a>
+      </div>
+      <div>
+        <h2>
+          South America
+        </h2>
+      </div>
+    </div>
+    <div
+      className="country-title-cont"
+    >
+      <span
+        className="country-title"
+      >
+        COUNTRIES
+      </span>
+    </div>
+    <hr
+      className="hr"
+    />
+    <div
+      className="container"
+    />
+  </div>
+</main>
+`;
